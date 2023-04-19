@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "goldenberries",
+  "version": "${version}",
+
+  "name": "Golden Berries",
+  "description": "This mod adds golden to your game.",
+  "authors": [
+    "Nedelis"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/goldenberries/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.nedelis.goldenberries.GoldenBerries"
+    ]
+  },
+  "mixins": [
+    "goldenberries.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
